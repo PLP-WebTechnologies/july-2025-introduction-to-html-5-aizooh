@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Web Design: HTML5, Accessibility & SEO Basics</title>
+    <meta name="description" content="A demonstration of foundational HTML5 semantic structure, web accessibility best practices, and basic on-page SEO techniques.">
+    <meta name="keywords" content="HTML5, semantic, accessibility, SEO, web development, beginner">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+
+    <header>
+        <h1>The Fundamentals of Semantic HTML5</h1>
+        <p>Building a better web, one semantic tag at a time.</p>
+    </header>
+
+    <nav aria-label="Main Site Navigation">
+        <ul>
+            <li><a href="#about-us">About Semantics</a></li>
+            <li><a href="#accessibility">Accessibility Focus</a></li>
+            <li><a href="#seo-tips">SEO Principles</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="about-us">
+            <h2>1. What is Semantic HTML5?</h2>
+            <article>
+                <p>Semantic HTML refers to the use of tags that convey the **meaning** of the content, not just how it should look. Instead of using generic tags like `div` everywhere, we use tags like `header`, `nav`, `main`, `section`, `article`, and `footer`.</p>
+                <p><strong>This approach improves machine readability for search engines and assistive technologies like screen readers.</strong></p>
+            </article>
+        </section>
+
+        <hr> <section id="accessibility">
+            <h2>2. Prioritizing Web Accessibility ♿</h2>
+            <h3>The Role of Semantic Tags in Accessibility</h3>
+            <p>Semantic elements are crucial for accessibility because they define **landmarks** that screen readers use to navigate the page quickly. The `<main>`, `<nav>`, `<header>`, and `<footer>` tags are key landmarks. Proper heading structure (`h1` through `h6`) is also vital.</p>
+            
+            <figure>
+                <img src="placeholder-diagram.png" alt="Diagram showing the proper nesting of HTML tags like header, nav, section, and article within the body.">
+                <figcaption>A visually impaired user relies on the `alt` attribute and semantic structure for context.</figcaption>
+            </figure>
+
+            <h3>Accessibility Best Practices (Attributes)</h3>
+            <aside aria-labelledby="aria-label-heading">
+                <h4 id="aria-label-heading">Quick Tip: ARIA Attributes</h4>
+                <p>While we avoid complex ARIA here, basic use, like `aria-label` on the `<nav>` element, provides a concise description for the navigation landmark, improving screen reader experience.</p>
+            </aside>
+        </section>
+
+        <hr>
+
+        <section id="seo-tips">
+            <h2>3. Foundational On-Page SEO Principles 🤖</h2>
+            <h3>Structuring Content for Search Engine Crawlers</h3>
+            <p>Search Engine Optimization (SEO) involves making your page discoverable. On a basic level, this means:</p>
+            <ol>
+                <li>Using a descriptive and keyword-rich `<title>` tag.</li>
+                <li>Providing a concise and compelling `<meta name="description">`.</li>
+                <li>Ensuring the primary keywords are in the **`<h1>` heading**.</li>
+                <li>Maintaining a clear, logical **heading hierarchy** (`h1` -> `h2` -> `h3`, etc.)</li>
+                <li>Using meaningful text in anchor tags, like the navigation links.</li>
+            </ol>
+
+            <h3>Code Readability for Developers and Machines</h3>
+            <p>Clean, valid HTML code not only helps fellow developers but also ensures that search engine crawlers can efficiently parse and understand the page structure, which indirectly aids in ranking and content comprehension.</p>
+        </section>
+        
+        <address id="contact">
+            <p>For more information, contact the author via email: <a href="mailto:dev@example.com">dev@example.com</a></p>
+        </address>
+
+    </main>
+
+    <footer>
+        <small>&copy; 2025 Semantic Web Learning. All rights reserved.</small>
+        <nav aria-label="Footer Utility Links">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
